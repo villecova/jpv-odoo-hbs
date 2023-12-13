@@ -8,15 +8,27 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const mergeJSON = require('handlebars-webpack-plugin/utils/mergeJSON');
+// const mergeJSON = require('handlebars-webpack-plugin/utils/mergeJSON');
 const OptimizeCssAssetsPlugin =   require('optimize-css-assets-webpack-plugin');
 const PurgeCSSPlugin = require('purgecss-webpack-plugin');
+const fs = require('fs');
+const yaml = require('js-yaml');
 
+// Function to load YAML file
+const loadYAML = (filePath) => {
+  try {
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    return yaml.load(fileContents);
+  } catch (e) {
+    console.error(`Error reading YAML file ${filePath}:`, e);
+    return {};
+  }
+};
 
 // Project config data.
 // Go here to change stuff for the whole demo, ie, change the navbar.
 // Also go here for the various data loops, ie, category products, slideshows
-const projectData = mergeJSON(path.join(__dirname, '/src/data/**/*.json'));
+const projectData = loadYAML(path.join(__dirname, '/src/data/data.yml'));
 
 
 //PurgeCSS Paths

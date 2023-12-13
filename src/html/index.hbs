@@ -8,11 +8,11 @@
   {{> hero/hero }}
 </div>
 
-{{#each products.entries}}
-<div class="">
-    <p>{{title}}</p>
-    <p>{{price}}</p>
-</div>
+{{#each entries}}
+  <div class="product">
+    <p>{{this.title}}</p>
+    <p>Price: {{this.price}}</p>
+  </div>
 {{/each}}
 
 <!-- Main Content -->
