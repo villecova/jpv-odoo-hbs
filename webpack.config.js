@@ -145,9 +145,9 @@ const wPackConfig = {
             ],
         }),
         new HandlebarsPlugin({
-            entry: path.join(process.cwd(), 'src', 'html', '**', '*.html'),
+            entry: path.join(process.cwd(), 'src', 'html', '**', '*.{html,hbs}'),
             output: path.join(process.cwd(), 'dist', '[path]', '[name].html'),
-            partials: [path.join(process.cwd(), 'src', 'partials', '**', '*.{html,svg}')],
+            partials: [path.join(process.cwd(), 'src', 'partials', '**', '*.{html,svg,hbs}')],
             data: projectData,
             helpers: {
                 webRoot: function() {

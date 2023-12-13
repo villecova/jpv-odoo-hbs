@@ -3,8 +3,10 @@
 {{> header/head title="Homepage" }}
 <body>
 <!-- Navbar -->
-{{> header/navbar }}
-{{> hero/hero }}
+<div class="hero-section bg-primary">
+  {{> header/navbar }}
+  {{> hero/hero }}
+</div>
 
 {{#each products.entries}}
 <div class="">
