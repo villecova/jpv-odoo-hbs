@@ -71,4 +71,66 @@ hero:
         - title: EXPIRY DATE
           text: 11/23
           class: 
-      
+
+slider:
+  - img:
+      url: /assets/images/gallery_paypal.svg
+      alt: airbnb
+    stars: ★★★★☆
+    title: 4.95 out of 5 stars
+    under_title: from 23 reviews
+    subtitle: ""
+    description: They build modern-looking websites easily using Tabs.
+    cta:
+      enabled: true
+      text: Learn more
+      url:
+  - img:
+      url: /assets/images/gallery_paypal.svg
+      alt: airbnb
+    stars: ★★★★☆
+    title: 4.95 out of 5 stars
+    under_title: from 23 reviews
+    subtitle: ""
+    description: They build modern-looking websites easily using Tabs.
+    cta:
+      enabled: true
+      text: Learn more
+      url:
+  - img:
+      url: /assets/images/gallery_paypal.svg
+      alt: airbnb
+    stars: ★★★★☆
+    title: 4.95 out of 5 stars
+    under_title: from 23 reviews
+    subtitle: ""
+    description: They build modern-looking websites easily using Tabs.
+    cta:
+      enabled: true
+      text: Learn more
+      url:
+  - img:
+      url: /assets/images/gallery_paypal.svg
+      alt: airbnb
+    stars: ★★★★☆
+    title: 4.95 out of 5 stars
+    under_title: from 23 reviews
+    subtitle: ""
+    description: They build modern-looking websites easily using Tabs.
+    cta:
+      enabled: true
+      text: Learn more
+      url:
+  - img:
+      url: /assets/images/gallery_paypal.svg
+      alt: airbnb
+    stars: ★★★★☆
+    title: 4.95 out of 5 stars
+    under_title: from 23 reviews
+    subtitle: ""
+    description: They build modern-looking websites easily using Tabs.
+    cta:
+      enabled: true
+      text: Learn more
+      url:
+    

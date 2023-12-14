@@ -1,61 +1,32 @@
-  <!-- Swiper -->
+<div class="container">
+    <p>Awards</p>
+    <h2>Awards for design, creativity, and innovation on the Internet</h2>
+<!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
+
+      {{#each slider}} 
       <div class="swiper-slide">
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+            <div class="card-body">
+                <img class="card-img-top" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
+                <span>{{this.stars}}</span>
+                <h5 class="card-title">{{this.title}}</h5>
+                <p class="under-title">{{this.under_title}}</p>
+                {{!-- <p class="subtitle"></p> --}}
+                <p class="card-text">{{this.description}}</p>
+                <a href="{{this.cta.url}}">{{this.cta.text}}</a>
+            </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-      </div>
+      {{/each}}
+      
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
+</div>
 
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
