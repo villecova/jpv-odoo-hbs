@@ -1,16 +1,19 @@
-// body {
-//     position: relative;
-//     height: 100%;
-//   }
+.swiper-section {
 
-//   body {
-//     background: #eee;
-//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-//     font-size: 14px;
-//     color: #000;
-//     margin: 0;
-//     padding: 0;
-//   }
+  .card {
+    height: 18rem;
+    width: 15rem;
+  }
+
+  .card-img-top {
+    width: 7rem;
+    height: auto;
+  }
+
+  .card-body {
+    gap: 1rem;
+  }
+}
 
   .swiper {
     width: 100%;

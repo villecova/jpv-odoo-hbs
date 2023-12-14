@@ -72,65 +72,63 @@ hero:
           text: 11/23
           class: 
 
-slider:
-  - img:
-      url: /assets/images/gallery_paypal.svg
-      alt: airbnb
-    stars: ★★★★☆
-    title: 4.95 out of 5 stars
-    under_title: from 23 reviews
-    subtitle: ""
-    description: They build modern-looking websites easily using Tabs.
-    cta:
-      enabled: true
-      text: Learn more
-      url:
-  - img:
-      url: /assets/images/gallery_paypal.svg
-      alt: airbnb
-    stars: ★★★★☆
-    title: 4.95 out of 5 stars
-    under_title: from 23 reviews
-    subtitle: ""
-    description: They build modern-looking websites easily using Tabs.
-    cta:
-      enabled: true
-      text: Learn more
-      url:
-  - img:
-      url: /assets/images/gallery_paypal.svg
-      alt: airbnb
-    stars: ★★★★☆
-    title: 4.95 out of 5 stars
-    under_title: from 23 reviews
-    subtitle: ""
-    description: They build modern-looking websites easily using Tabs.
-    cta:
-      enabled: true
-      text: Learn more
-      url:
-  - img:
-      url: /assets/images/gallery_paypal.svg
-      alt: airbnb
-    stars: ★★★★☆
-    title: 4.95 out of 5 stars
-    under_title: from 23 reviews
-    subtitle: ""
-    description: They build modern-looking websites easily using Tabs.
-    cta:
-      enabled: true
-      text: Learn more
-      url:
-  - img:
-      url: /assets/images/gallery_paypal.svg
-      alt: airbnb
-    stars: ★★★★☆
-    title: 4.95 out of 5 stars
-    under_title: from 23 reviews
-    subtitle: ""
-    description: They build modern-looking websites easily using Tabs.
-    cta:
-      enabled: true
-      text: Learn more
-      url:
-    
+swiper:
+  section_tag: Awards
+  title: Awards for design, creativity, and innovation on the Internet
+  slider:
+    - img:
+        url: /assets/images/gallery_airbnb.svg
+        alt: airbnb
+      stars: ★★★★☆
+      title: 4.95 out of 5 stars
+      under_title: from 23 reviews
+      description: ""
+      cta:
+        enabled: false
+        text: Learn more
+        url:
+    - img:
+        url: /assets/images/gallery_amazon.svg
+        alt: amazon
+      stars: ""
+      title: ""
+      under_title: ""
+      description: They build modern-looking websites easily using Tabs.
+      cta:
+        enabled: true
+        text: Learn more
+        url:
+    - img:
+        url: /assets/images/gallery_slack.svg
+        alt: slack
+      stars: ""
+      title: ""
+      under_title: ""
+      description: They build modern-looking websites easily using Trello.
+      cta:
+        enabled: true
+        text: Learn more
+        url:
+    - img:
+        url: /assets/images/gallery_spotify.svg
+        alt: spotify
+      stars: ★★★★☆
+      title: 4.95 out of 5 stars
+      under_title: from 23 reviews
+      description: ""
+      cta:
+        enabled: false
+        text: Learn more
+        url:
+    - img:
+        url: /assets/images/gallery_paypal.svg
+        alt: airbnb
+      stars: ""
+      title: ""
+      under_title: ""
+      description: They build modern-looking websites easily using Tabs.
+      cta:
+        enabled: true
+        text: Learn more
+        url:
+      

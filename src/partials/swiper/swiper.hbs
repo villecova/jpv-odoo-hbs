@@ -1,32 +1,47 @@
-<div class="container">
-    <p>Awards</p>
-    <h2>Awards for design, creativity, and innovation on the Internet</h2>
+{{#with swiper}}
+<section class="swiper-section">
+  <div class="container">
+      <p>{{this.section_tag}}</p>
+      <h2 class="pb-3">{{this.title}}</h2>
 <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
 
       {{#each slider}} 
       <div class="swiper-slide">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
+        <div class="card">
+            <div class="card-body px-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="card-img-top" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
-                <span>{{this.stars}}</span>
-                <h5 class="card-title">{{this.title}}</h5>
-                <p class="under-title">{{this.under_title}}</p>
-                {{!-- <p class="subtitle"></p> --}}
-                <p class="card-text">{{this.description}}</p>
-                <a href="{{this.cta.url}}">{{this.cta.text}}</a>
+                {{#if this.stars}}
+                  <span class="text-warning">{{this.stars}}</span>
+                {{/if}}
+                {{#if this.title}}
+                  <div>
+                    <h6 class="card-title">{{this.title}}</h6>
+                    {{#if this.under_title}}
+                    <p class="under-title text-secondary">{{this.under_title}}</p>
+                    {{/if}}
+                  </div>
+                {{/if}}
+                {{#if this.description}}
+                <p class="card-text text-secondary">{{this.description}}</p>
+                 {{/if}}
+                {{#if this.cta.enabled}}
+                <a class="text-dark" href="{{this.cta.url}}">{{this.cta.text}}</a>
+                 {{/if}}
             </div>
+          </div>
         </div>
+        {{/each}}
+        
       </div>
-      {{/each}}
-      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
   </div>
-</div>
+</section>
+{{/with}}
 
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -48,4 +63,3 @@
       },
     });
   </script>
-</body>
