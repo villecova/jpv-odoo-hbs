@@ -1,9 +1,35 @@
-entries:
-  - title: Nike Air Max
-    price: £5.99
-  - title: Adidas Boost
-    price: £19.99
-  - title: Charol
-    price: £19.99
-  - title: Adidas Boost
-    price: £19.99 test
+# entries:
+#   - title: Nike Air Max
+#     price: £5.99
+#   - title: Adidas Boost
+#     price: £19.99
+#   - title: Charol
+#     price: £19.99
+#   - title: Adidas Boost
+#     price: £19.99 test
+header:
+  cta:
+    - text: Sign in
+      url: 
+      class: text-white
+    - text: Buy now
+      url: 
+      class: btn-light
+  links:
+    - text: Home
+      url: "#"
+    - text: Products
+      url: products
+    - text: Pages
+      url: pages
+    - text: App
+      url: app
+    - text: Docs
+      url: docs
+
+hero:
+  title: Development done right
+  subtitle: Build a beautiful, modern website with flexible components built from scratch.
+  cta:
+    text: Get started
+    url:

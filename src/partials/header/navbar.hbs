@@ -1,58 +1,39 @@
       <!-- header section -->
-      <header class="pt-5 pb-2 px-3 mx-auto">
+      <header class="header-section pt-5 px-3 mx-auto fixed-top bg-primary">
         <nav
           class="container navbar navbar-expand-md navbar-dark bg-primary fixed-top border-bottom border-white"
         >
           <!-- header logo -->
-          <div class="hero-section__logo">
+          <div class="header-section__logo">
             <a class="navbar-brand" href="#"
               ><img
                 width="60"
                 height="auto"
-                src="{{webRoot}}/assets/images/header_odoo-w.svg"
+                src="../../assets/images/header_odoo-w.svg"
                 alt="Odoo Logo"
             /></a>
           </div>
 
-          <!-- header menu -->
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <!-- header links -->
+          <div class="header-section__links collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto d-flex align-items-center">
+              {{#each header.links}}
               <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
+                <a class="nav-link" href="{{this.url}}">
+                  {{this.text}}
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages">Pages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="app">App</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="docs">Docs</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
+              {{/each}}
             </ul>
           </div>
 
-          <!-- header button -->
-          <div class="form-inline my-2 my-lg-0">
-            <button class="text-white btn my-2 my-sm-0" type="submit">
-              Sign in
-            </button>
-            <button class="btn btn-light my-2 my-sm-0" type="submit">
-              <i class="bi bi-bag"></i>Buy now
-            </button>
+          <!-- header buttons -->
+          <div class="header-section__buttons form-inline my-2 my-lg-0">
+            {{#each header.cta}}
+            <a href="{{this.url}}" class="btn my-2 my-sm-0 {{this.class}}" type="submit">
+              {{this.text}}
+            </a>
+            {{/each}}
           </div>
 
           <!-- mobile menu icon -->
