@@ -28,8 +28,47 @@ header:
       url: docs
 
 hero:
-  title: Development done right
-  subtitle: Build a beautiful, modern website with flexible components built from scratch.
-  cta:
-    text: Get started
-    url:
+  fist_col:
+    title: Development done right
+    subtitle: Build a beautiful, modern website with flexible components built from scratch.
+    cta:
+      text: Get started
+      url:
+    trusted:
+      text: "Trusted by:"
+      img:
+        - url: /assets/images/hero_icons-google-white.svg
+          alt: google
+        - url: /assets/images/hero_icons-spotify-white.svg
+          alt: spotify
+        - url: /assets/images/hero_icons-airbnb-white.svg
+          alt: airbnb
+        - url: /assets/images/hero_icons-paypal-white.svg
+          alt: paypal
+  second_col:
+    title: Manage cards
+    cta:
+      text: Add new
+      url:
+    purchases:
+      - store: Starbucks
+        price: $5,50 USD
+        status: Pending - San Francisco, United States
+      - store: Nike Sports
+        price: $129,00 USD
+        status: Pending - Lisbon, Portugal
+    card:
+      img: 
+        url: /assets/images/header_mastercard.svg
+        alt: Mastercard
+      status: Active 
+      text: CARD NUMBER
+      number: 4358 - 7421 - 9256 - 6682
+      info:
+        - title: NAME
+          text: John Snow
+          class: first
+        - title: EXPIRY DATE
+          text: 11/23
+          class: 
+      

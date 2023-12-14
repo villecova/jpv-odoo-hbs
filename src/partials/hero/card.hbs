@@ -1,27 +1,31 @@
-<div
-          class="hero-section__main--card card bg-dark text-white p-3 w-75"
-        >
-          <div class="head d-flex flex-row justify-content-between">
-            <img
-              width="70px"
-              height="auto"
-              src="{{webRoot}}/assets/images/header_odoo-w.svg"
-              alt="Mastercard"
-            />
-            <button class="btn btn-secondary">Active</button>
-          </div>
-          <div class="card-number py-3">
-            <p class="m-0">CARD NUMBER</p>
-            <h4>4358-7421-9256-6682</h4>
-          </div>
-          <div class="card-info d-flex flex-row">
-            <div class="name d-flex flex-column mr-5">
-              <p class="m-0">NAME</p>
-              <p>John Snow</p>
-            </div>
-            <div class="date d-flex flex-column ml-5">
-              <p class="m-0">EXPIRY DATE</p>
-              <p>11/23</p>
-            </div>
-          </div>
-        </div>
+{{#with hero.second_col.card}}
+<div class="card-section rounded card text-white p-3 w-75  justify-content-center">
+
+  <!-- card title -->
+  <div class="card-section__head d-flex flex-row justify-content-between">
+    <img
+      width="50px"
+      height="auto"
+      src="{{webRoot}}{{this.img.url}}"
+      alt="{{this.img.alt}}"
+    />
+    <button class="btn text-white">{{this.status}}</button>
+  </div>
+
+  <!-- card number -->
+  <div class="card-section__number pt-4 pb-3">
+    <p class="m-0 card-text">{{this.text}}</p>
+    <h4 class="d-flex justify-content-center">{{this.number}}</h4>
+  </div>
+
+  <!-- card info -->
+  <div class="card-section__info d-flex flex-row">
+  {{#each info}}
+    <div class="name d-flex flex-column {{this.class}}">
+      <p class="m-0 card-text">{{this.title}}</p>
+      <p class="m-0">{{this.text}}</p>
+    </div>
+  {{/each}}
+  </div>
+</div>
+{{/with}}

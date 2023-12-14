@@ -1,0 +1,37 @@
+.card-section {
+    margin: 0 auto;
+    min-width: 24rem;
+    min-height: 15rem;
+    background: url('/assets/images/header_map.svg'), linear-gradient(90deg, rgba(29,19,72,1) 0%, rgba(29,19,72,1) 35%);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+    &__head {
+        button {
+            background: #5CCAA7 !important;
+            font-size: 0.5rem;
+
+        }
+    }
+
+    &__number {
+        // letter-spacing: 0.1rem;
+        h4 {
+            font-size: 1.7rem;
+        }
+
+    }
+
+    &__info {
+        
+        .first {
+            margin-right: 3rem;
+        }
+ 
+    }
+
+    .card-text {
+        font-size: 0.5rem;
+    }
+}
