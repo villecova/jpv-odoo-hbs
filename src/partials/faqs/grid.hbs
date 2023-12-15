@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-10 col-sm-8 col-lg-6">
-            {{#each first_column}}
+            {{#each grid.first_column}}
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -20,7 +20,7 @@
             {{/each}}
         </div>
         <div class="col-lg-6">
-            {{#each second_column}}
+            {{#each grid.second_column}}
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -40,7 +40,3 @@
         </div>
     </div>
 </div>
-
-{{#with grid}}
-<p>{{this.title}}</p>
-{{/with}}
