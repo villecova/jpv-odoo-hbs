@@ -183,6 +183,19 @@ swiper:
         text: Learn more
         url:
 
+faqs:
+  title: Helpful answers
+  subtitle: I want to start a new project.
+  description: Start building fast, beautiful, and modern-looking websites in no time.
+  cta:
+    - text: Buy now 
+      url:  
+      class: btn btn-primary
+    - text: Learn more
+      url:
+      class: text-dark
+
+
 footer:
   title: Brilliant solutions for your ideas
   description: Modern-looking websites.

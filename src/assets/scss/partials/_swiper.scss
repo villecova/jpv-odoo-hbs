@@ -12,6 +12,13 @@
     }
   }
 
+  &__card {
+    &--undertitle,
+    &--description {
+      font-size: 0.8rem;
+    }
+  }
+
   .card-img-top {
     width: 7rem;
     height: auto;

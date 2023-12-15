@@ -9,7 +9,7 @@
 
       {{#each slider}} 
       <div class="swiper-slide">
-        <div class="card">
+        <div class="card swiper-section__card">
             <div class="card-body px-3 d-flex flex-column align-items-center justify-content-center">
                 <img class="card-img-top" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
                 {{#if this.stars}}
@@ -17,17 +17,17 @@
                 {{/if}}
                 {{#if this.title}}
                   <div>
-                    <h6 class="card-title">{{this.title}}</h6>
+                    <h6 class="card-title swiper-section__card--title">{{this.title}}</h6>
                     {{#if this.under_title}}
-                    <p class="under-title text-secondary">{{this.under_title}}</p>
+                    <p class="under-title text-secondary swiper-section__card--undertitle">{{this.under_title}}</p>
                     {{/if}}
                   </div>
                 {{/if}}
                 {{#if this.description}}
-                <p class="card-text text-secondary">{{this.description}}</p>
+                <p class="card-text text-secondary swiper-section__card--description">{{this.description}}</p>
                  {{/if}}
                 {{#if this.cta.enabled}}
-                <a class="text-dark" href="{{this.cta.url}}">{{this.cta.text}}</a>
+                <a class="text-dark swiper-section__card--subtitle" href="{{this.cta.url}}">{{this.cta.text}}</a>
                  {{/if}}
             </div>
           </div>
