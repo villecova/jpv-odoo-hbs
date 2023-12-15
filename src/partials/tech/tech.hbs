@@ -4,16 +4,20 @@
   <div class="container col-10 my-md-3 ps-md-3 justify-content-center">
     <div class="row">
       
-        <div class="col-lg-6 border-none">
+        <div class="card col-lg-6 bg-light">
+          <img class="card-img info-image" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
+          <div class="card-img-overlay">
+              <a href="" class="btn btn-light">Play video</a>
+          </div>
         </div>
 
-         <div class="bg-light col-sm-8 col-lg-6 d-flex flex-column justify-content-center">
-            <div class="my-3 info-container d-flex flex-column">
-                <p class="bg-primary text-white section-tag">{{this.section_tag}}</p>
-                <h2 class="m-0">{{this.title}}</h2>
-                <p class="text-muted">{{this.description}}</p>
-                <a class="text-primary" href="{{this.cta.url}}">{{this.cta.text}}</a>
-            </div>
+        <div class="bg-light col-sm-8 col-lg-6 d-flex flex-column justify-content-center">
+          <div class="my-3 info-container d-flex flex-column">
+              <p class="bg-primary text-white section-tag">{{this.section_tag}}</p>
+              <h2 class="m-0">{{this.title}}</h2>
+              <p class="text-muted">{{this.description}}</p>
+              <a class="text-primary" href="{{this.cta.url}}">{{this.cta.text}}</a>
+          </div>
         </div>
     </div>
   </div>

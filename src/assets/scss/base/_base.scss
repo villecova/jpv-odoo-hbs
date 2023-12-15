@@ -8,3 +8,17 @@
 .info-container {
     gap: 1rem;
 }
+
+.card-img-overlay {
+    top: 1rem;
+    left: 2rem;
+    a {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+}
+
+.info-image { 
+    max-width: 30rem;
+    margin: 0 auto;
+    background: none;
+}
