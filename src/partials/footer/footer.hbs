@@ -1,0 +1,65 @@
+<div class="footer-section">
+  {{#with footer}}
+  <footer class="container pt-5 pb-3">
+      <div class="row border-bottom py-4 footer-section__header">
+        <div class="col-10 col-sm-8 col-lg-6 d-flex flex-column jusify-content-center">
+          <h4 class="text-white">{{this.title}}</h4>
+          <p class="text-white">{{this.description}}</p>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center flex-row-reverse">
+            {{#each cta}}
+            <a class="btn btn-light {{this.class}}" href="{{this.url}}">{{this.text}}</a>
+            {{/each}}
+        </div>
+      </div>
+      <div class="row py-5 border-bottom justify-content-between">
+        <div class="col-10 col-sm-8 col-lg-6 footer-section__branch w-25">
+          <a class="navbar-brand" href="#"
+            ><img
+              width="120px"
+              height="auto"
+              class="pb-3"
+              src="../../assets/images/header_odoo-w.svg"
+              alt="Odoo Logo"
+          /></a>
+          <p class="text-white">{{this.branch.description}}</p>
+        </div>
+        <div class="col-lg-6 d-flex footer-section__links">
+          {{#each list}}
+          <div class="col-6 col-md">
+            <h5 class="text-white">{{this.title}}</h5>
+            <ul class="list-unstyled text-small ">
+              {{#each links}}
+              <li><a class="link-secondary text-white" href="{{this.url}}">{{this.text}}</a></li>
+              {{/each}}
+            </ul>
+          </div>
+          {{/each}}
+        </div>
+
+      </div>
+      <div class="footer-section__legal container pt-3 text-center">
+        <div class="row">
+          <p class="text-white m-0">{{this.legal.title}}</p>
+          <div>
+            {{#each legal.links}}
+              <a class="text-white" href="{{this.url}}">{{this.text}}</a>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </footer>
+    {{/with}}
+  </div>
+
+    <!-- Vendor JS -->
+    <script src="{{webRoot}}/assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="{{webRoot}}/assets/js/theme.bundle.js"></script>
+
+    <!-- jQuery -->
+    <script src="path/to/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
