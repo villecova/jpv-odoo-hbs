@@ -1,11 +1,11 @@
 {{#with swiper}}
-<section class="swiper-section">
+<section class="swiper-section pt-3 pb-5">
   <div class="container">
-      <p class="section-tag bg-primary text-white">{{this.section_tag}}</p>
-      <h2 class="pb-3">{{this.title}}</h2>
+      <p class="section-tag bg-primary text-white mb-4">{{this.section_tag}}</p>
+      <h2 class="pb-3 mb-4">{{this.title}}</h2>
 <!-- Swiper -->
   <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+    <div class="swiper-wrapper pb-8">
 
       {{#each slider}} 
       <div class="swiper-slide">
@@ -49,10 +49,18 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 30,
       freeMode: true,
       loop: true,
+      breakpoints: {
+        478: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+      }, 
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
