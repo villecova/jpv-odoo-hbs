@@ -1,0 +1,30 @@
+.footer-section {
+    background: #161348;   
+    
+    &__header {
+        .btn {
+            margin-right: 2rem;
+            border: none;
+        }
+    }
+
+    &__branch {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    &__links {
+        a {
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+    }
+
+    &__legal {
+        font-size: 0.8rem;
+        a {
+            text-decoration: none !important;
+        }
+    }
+}
