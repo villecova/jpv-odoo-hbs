@@ -1,3 +1,4 @@
+{{#with features}}
 <section class="features-section p-4">
     
   <div class="container col-10 my-md-3 ps-md-3 justify-content-center">
@@ -5,22 +6,23 @@
 
          <div class="bg-light col-sm-8 col-lg-6 d-flex flex-column justify-content-center">
             <div class="my-3 info-container d-flex flex-column">
-                <p class="bg-success text-white section-tag">Features</p>
-                <h2 class="m-0">Get components and examples, including tons of variables that will help you grow your business.</h2>
+                <p class="bg-success text-white section-tag">{{this.section_tag}}</p>
+                <h2 class="m-0">{{this.title}}</h2>
                 <ul>
-                    <li><p>Perfect for modern startups</p></li>
-                    <li><p>Fully customizable and scalable</p></li>
+                    <li class="text-success"><p class="m-0">{{this.list_one}}</p></li>
+                    <li class="text-success"><p class="m-0">{{this.list_two}}</p></li>
                 </ul>
             </div>
         </div>
 
         <div class="card col-lg-6">
-            <img class="card-img" src="{{webRoot}}/assets/images/download_img.jpg" alt="Download image">
+            <img class="card-img" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
             <div class="card-img-overlay">
-                <a href="" class="btn btn-light">Play video</a>
+                <a href="{{this.cta.url}}" class="btn btn-light">{{this.cta.text}}</a>
             </div>
         </div>
 
     </div>
   </div>
 </section>
+{{/with}}
