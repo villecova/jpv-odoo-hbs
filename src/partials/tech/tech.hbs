@@ -1,22 +1,21 @@
+{{#with tech}}
 <section class="tech-section p-4">
     
   <div class="container col-10 my-md-3 ps-md-3 justify-content-center">
     <div class="row">
-
+      
         <div class="col-lg-6 border-none">
         </div>
 
          <div class="bg-light col-sm-8 col-lg-6 d-flex flex-column justify-content-center">
             <div class="my-3 info-container d-flex flex-column">
-                <p class="bg-primary text-white section-tag">Technology</p>
-                <h2 class="m-0">We use the latest technologies on the market</h2>
-                <p class="text-muted">Get components and examples, including tons of variables that will help you grow your business.</p>
-                <a class="text-primary" href="">See case studies</a>
+                <p class="bg-primary text-white section-tag">{{this.section_tag}}</p>
+                <h2 class="m-0">{{this.title}}</h2>
+                <p class="text-muted">{{this.description}}</p>
+                <a class="text-primary" href="{{this.cta.url}}">{{this.cta.text}}</a>
             </div>
         </div>
-
-
-
     </div>
   </div>
 </section>
+{{/with}}
