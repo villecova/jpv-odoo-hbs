@@ -1,3 +1,4 @@
+{{#with install}}
 <section class="download-section p-4">
     
   <div class="container col-10 my-md-3 ps-md-3 justify-content-center">
@@ -5,18 +6,18 @@
 
          <div class="bg-light col-sm-8 col-lg-6 d-flex flex-column justify-content-center">
             <div class="my-3 info-container d-flex flex-column">
-                <p class="bg-warning text-white section-tag">Easy to install</p>
-                <h2 class="m-0">Download, install and run.</h2>
-                <p class="text-muted">Get components and examples, including tons of variables that will help you grow your business.</p>
+                <p class="bg-warning text-white section-tag">{{this.section_tag}}</p>
+                <h2 class="m-0">{{this.title}}</h2>
+                <p class="text-muted">{{this.description}}</p>
             </div>
             <div class="d-flex flex-row">
-                <a class="" href=""><img width="150px" height="auto" src="{{webRoot}}/assets/images/download_app.png" alt="App Store"></a>
-                <a class="" href=""><img width="150px" height="auto" src="{{webRoot}}/assets/images/download_google.png" alt="Google Play"></a>
+                <a class="download-section__cta--app" href=""><img width="150px" height="auto" src="{{webRoot}}/assets/images/download_app.png" alt="App Store"></a>
+                <a class="download-section__cta--play" href=""><img width="150px" height="auto" src="{{webRoot}}/assets/images/download_google.png" alt="Google Play"></a>
             </div>
         </div>
 
         <div class="card col-lg-6 border-none">
-            <img class="card-img" src="{{webRoot}}/assets/images/download_img.jpg" alt="Download image">
+            <img class="card-img" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
             <div class="card-img-overlay">
                 <a href="" class="btn btn-light">Play video</a>
             </div>
@@ -25,3 +26,4 @@
     </div>
   </div>
 </section>
+{{/with}}
