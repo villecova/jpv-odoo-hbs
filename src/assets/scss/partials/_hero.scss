@@ -2,6 +2,11 @@
     &__first-col {
         gap: 1rem;
         padding-left: 0;
+
+        .trusted {
+            font-size: 0.8rem;
+            border-radius: 50%;
+        }
     }
 
     &__second-col {
@@ -11,7 +16,7 @@
 
     &__purchases {
         &--status {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     }
 }
