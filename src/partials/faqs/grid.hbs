@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container faqs-grid">
     <div class="row">
         <div class="col-10 col-sm-8 col-lg-6">
             {{#each grid.first_column}}
             <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
+                <div class="card my-3 faqs-grid__frist-column">
+                    <div class="card-header">
                     <p class="mb-0">
                         <a class="text-dark" data-bs-toggle="collapse" href="#multiCollapse{{this.number}}" role="button" aria-expanded="false" aria-controls="multiCollapse{{this.number}}">{{this.title}}</a>
                     </p>
@@ -22,8 +22,8 @@
         <div class="col-lg-6">
             {{#each grid.second_column}}
             <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
+                <div class="card my-3 faqs-grid__second-column">
+                    <div class="card-header">
                     <p class="mb-0">
                         <a class="text-dark" data-bs-toggle="collapse" href="#multiCollapse{{this.number}}" role="button" aria-expanded="false" aria-controls="multiCollapse{{this.number}}">{{this.title}}</a>
                     </p>

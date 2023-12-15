@@ -190,10 +190,10 @@ faqs:
   cta:
     - text: Buy now 
       url:  
-      class: btn btn-primary
+      class: "text-white btn-primary"
     - text: Learn more
       url:
-      class: text-dark
+      class: "text-dark"
   grid:
     first_column:
       - title: Which license do I need?

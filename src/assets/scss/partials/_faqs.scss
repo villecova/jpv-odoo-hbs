@@ -1,0 +1,22 @@
+.faqs-section {
+
+    &__cta {
+        a {
+            &:first-of-type {
+                background-color: $primary;
+            }
+        }
+    }
+    
+    .faqs-grid {
+        &__frist-column,
+        &__second-column {
+            a {
+                text-decoration: none;
+            }
+        }
+        &__second-column {
+    
+        }
+    }
+}

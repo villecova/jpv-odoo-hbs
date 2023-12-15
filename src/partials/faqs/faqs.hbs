@@ -1,16 +1,19 @@
 {{#with faqs}}
-<section class="faqs-section text-center">
+<section class="faqs-section text-center py-8">
     <div class="container">
-        <h2>{{this.title}}</h2>
-        <p class="text-muted">{{this.description}}</p>
+        <div class="py-3">
+            <h2 class="pb-1">{{this.title}}</h2>
+            <p class="text-muted">{{this.description}}</p>
+        </div>
+
         <div class="row">
             {{> faqs/grid}}
         </div>
 
-        <p>{{this.subtitle}}</p>
-        <div class="">
+        <p class="pt-5">{{this.subtitle}}</p>
+        <div class="faqs-section__cta">
             {{#each cta}}
-            <a class="{{this.class}}" href="{{this.url}}">{{this.text}}</a>
+            <a type="button" class="btn mx-1 {{#if this.class}}{{this.class}}{{/if}}" href="{{this.url}}">{{this.text}}</a>
             {{/each}}
         </div>
 
