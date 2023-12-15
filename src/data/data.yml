@@ -72,6 +72,26 @@ hero:
           text: 11/23
           class: 
 
+tools:
+  section_tag: Tools
+  img: 
+    url: /assets/images/download_img.jpg
+    atl: Download image
+  title: We build for designers and developers
+  description: Get components and examples, including tons of variables that will help you grow your business.
+  cta:
+    text: Play video
+    url:
+  projects:
+    title: Awesome projects
+    items:
+      - title: Create the new logo
+        time: "3:50"
+      - title: Set up the color palette
+        time: "4:00"
+      - title: Wireframe and prototype
+        time: "6:50"
+
 swiper:
   section_tag: Awards
   title: Awards for design, creativity, and innovation on the Internet
