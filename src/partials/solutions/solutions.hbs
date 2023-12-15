@@ -1,0 +1,15 @@
+{{#with solutions}}
+<section class="solutions-section my-8">
+    <div class="container d-flex flex-column justify-content-center px-9">
+        <div class="row">
+            <div class="col-10 col-sm-8 col-lg-6 d-flex flex-column jusify-content-center">
+                <h2 class="text-white">{{this.title}}</h2>
+                <p class="text-white">{{this.description}}</p>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center flex-row-reverse">
+                <a class="btn btn-light" href="{{this.cta.url}}">{{this.cta.text}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{/with}}
