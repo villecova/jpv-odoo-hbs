@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-10 col-sm-8 col-lg-6">
+            {{#each first_column}}
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <p class="mb-0">
+                        <a class="text-dark" data-bs-toggle="collapse" href="#multiCollapse{{this.number}}" role="button" aria-expanded="false" aria-controls="multiCollapse{{this.number}}">{{this.title}}</a>
+                    </p>
+                    </div>
+
+                    <div class="collapse multi-collapse" id="multiCollapse{{this.number}}">
+                    <div class="card card-body">
+                        {{this.description}}
+                    </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="col-lg-6">
+            {{#each second_column}}
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <p class="mb-0">
+                        <a class="text-dark" data-bs-toggle="collapse" href="#multiCollapse{{this.number}}" role="button" aria-expanded="false" aria-controls="multiCollapse{{this.number}}">{{this.title}}</a>
+                    </p>
+                    </div>
+
+                    <div class="collapse multi-collapse" id="multiCollapse{{this.number}}">
+                    <div class="card card-body">
+                        {{this.description}}
+                    </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+{{#with grid}}
+<p>{{this.title}}</p>
+{{/with}}
