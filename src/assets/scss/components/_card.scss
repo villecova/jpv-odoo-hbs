@@ -1,11 +1,16 @@
 .card-section {
     margin: 0 auto;
-    min-width: 24rem;
-    min-height: 15rem;
+    min-width: 20rem;
+    min-height: 10rem;
     background: url('/assets/images/header_map.svg'), linear-gradient(90deg, rgba(29,19,72,1) 0%, rgba(29,19,72,1) 35%);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+
+    @media only screen and (min-width: 600px) {
+        min-width: 24rem;
+        min-height: 15rem;
+    }
 
     &__head {
         button {
@@ -18,7 +23,11 @@
     &__number {
         // letter-spacing: 0.1rem;
         h4 {
-            font-size: 1.7rem;
+            font-size: 1.3rem;
+            @media only screen and (min-width: 600px) {
+                font-size: 1.7rem;
+
+            }
         }
 
     }

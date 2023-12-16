@@ -1,4 +1,9 @@
 .features-section {
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 10rem !important;
+    }
+
     .card {
         border: none;
     }

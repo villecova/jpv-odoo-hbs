@@ -3,6 +3,17 @@
         &--app {
             margin-right: 1rem;
         }
+
+        &--app,
+        &--play {
+            img {
+                width: 8rem;
+                height: auto;
+                @media only screen and (min-width: 600px) {
+                    width: 12rem;
+                }
+            }
+        }
      }
 
     .card {

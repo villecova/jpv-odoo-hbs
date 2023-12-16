@@ -4,14 +4,30 @@
         padding-left: 0;
 
         .trusted {
-            font-size: 0.8rem;
+            font-size: 0.5rem;
             border-radius: 50%;
+            @media only screen and (min-width: 600px) {
+                font-size: 0.8rem;
+            }
+        }
+
+        &--icons {
+            width: 3.5rem;
+            height: auto;
+            @media only screen and (min-width: 600px) {
+                width: 5rem;
+            }
+          
         }
     }
 
     &__second-col {
         width: fit-content;
         border-bottom-right-radius: 4rem !important;
+
+        @media only screen and (max-width: 600px) {
+            margin-top: 2rem;
+        }
     }
 
     &__purchases {

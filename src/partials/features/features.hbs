@@ -2,7 +2,14 @@
 <section class="features-section p-4">
     
   <div class="container col-10 my-md-3 ps-md-3 justify-content-center">
-    <div class="row">
+    <div class="row flex-lg-row-reverse">
+
+        <div class="card col-lg-6 bg-light">
+            <img class="card-img info-image" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
+            <div class="card-img-overlay">
+                <a href="{{this.cta.url}}" class="btn btn-light">{{this.cta.text}}</a>
+            </div>
+        </div>
 
          <div class="bg-light col-sm-8 col-lg-6 d-flex flex-column justify-content-center">
             <div class="my-3 info-container d-flex flex-column">
@@ -12,13 +19,6 @@
                     <li class="text-success"><p class="m-0">{{this.list_one}}</p></li>
                     <li class="text-success"><p class="m-0">{{this.list_two}}</p></li>
                 </ul>
-            </div>
-        </div>
-
-        <div class="card col-lg-6 bg-light">
-            <img class="card-img info-image" src="{{webRoot}}{{this.img.url}}" alt="{{this.img.alt}}">
-            <div class="card-img-overlay">
-                <a href="{{this.cta.url}}" class="btn btn-light">{{this.cta.text}}</a>
             </div>
         </div>
 

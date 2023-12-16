@@ -1,8 +1,11 @@
 .solutions-section {
     .container {
         height: 15rem;
-        border-bottom-left-radius: 4rem;     
-        border-top-right-radius: 4rem; 
         background: #161348;    
+
+        @media only screen and (min-width: 600px) {
+            border-bottom-left-radius: 4rem;     
+            border-top-right-radius: 4rem;
+        }
     }
 }

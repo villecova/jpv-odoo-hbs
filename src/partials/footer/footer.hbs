@@ -1,8 +1,8 @@
 <div class="footer-section">
   {{#with footer}}
   <footer class="container pt-5 pb-3">
-      <div class="row border-bottom py-4 footer-section__header">
-        <div class="col-10 col-sm-8 col-lg-6 d-flex flex-column jusify-content-center">
+      <div class="row border-bottom pb-5 pb-lg-3 footer-section__header">
+        <div class="col-10 col-sm-12 col-lg-6 d-flex flex-column jusify-content-center">
           <h4 class="text-white">{{this.title}}</h4>
           <p class="text-white">{{this.description}}</p>
         </div>
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="row py-5 border-bottom justify-content-between">
-        <div class="col-10 col-sm-8 col-lg-6 footer-section__branch w-25">
+        <div class="col-10 col-sm-12 col-lg-4 footer-section__branch">
           <a class="navbar-brand" href="#"
             ><img
               width="120px"
@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg-6 d-flex footer-section__links">
           {{#each list}}
-          <div class="col-6 col-md">
+          <div class="col-4 col-md">
             <h5 class="text-white">{{this.title}}</h5>
             <ul class="list-unstyled text-small ">
               {{#each links}}

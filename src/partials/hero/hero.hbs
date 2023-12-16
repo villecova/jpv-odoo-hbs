@@ -1,6 +1,37 @@
 <section class="hero-section">
   <div class="hero-section__main container col-xxl-8 px-4 pb-5 pt-9">
-    <div class="row flex-lg-row-reverse align-items-center g-10 p-3  justify-content-center">
+    <div class="row align-items-center p-3 justify-content-center">
+
+      <!-- hero first col -->
+      {{#with hero.fist_col}}
+      <div class="hero-section__first-col col-lg-6 d-flex flex-column">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-white ">
+          {{this.title}}
+        </h1>
+        <p class="lead text-white ">
+          {{this.subtitle}}
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a type="button" href="{{this.cta.url}}" class="btn btn-light btn-lg px-4 me-md-2">{{this.cta.text}}</a>
+        </div>
+        
+
+        {{#with trusted}}
+        <div class="d-flex flex-row">
+          <p class="text-white mb-0 py-3 trusted">{{this.text}}</p>
+          
+          {{#each img}}
+          <img
+            class="mx-2 hero-section__first-col--icons"
+            src="{{webRoot}}{{this.url}}"
+            alt="{{this.alt}}"
+          />
+          {{/each}}
+          
+        </div>
+        {{/with}}
+      </div>
+      {{/with}}
 
       <!-- hero second col -->
       <div class="hero-section__second-col col-10 col-sm-8 col-lg-6 bg-white rounded p-4">
@@ -34,38 +65,7 @@
         <a class="view-all" href="">View all</a>
       </div>
 
-      <!-- hero first col -->
-      {{#with hero.fist_col}}
-      <div class="hero-section__first-col col-lg-6 d-flex flex-column">
-        <h1 class="display-5 fw-bold lh-1 mb-3 text-white w-75">
-          {{this.title}}
-        </h1>
-        <p class="lead text-white ">
-          {{this.subtitle}}
-        </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a type="button" href="{{this.cta.url}}" class="btn btn-light btn-lg px-4 me-md-2">{{this.cta.text}}</a>
-        </div>
-        
 
-        {{#with trusted}}
-        <div class="d-flex flex-row">
-          <p class="text-white mb-0 py-3 trusted">{{this.text}}</p>
-          
-          {{#each img}}
-          <img
-            class="mx-2"
-            width="70px"
-            height="auto"
-            src="{{webRoot}}{{this.url}}"
-            alt="{{this.alt}}"
-          />
-          {{/each}}
-          
-        </div>
-        {{/with}}
-      </div>
-      {{/with}}
     </div>
   </div>
 </section>
